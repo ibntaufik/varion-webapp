@@ -108,6 +108,15 @@
                 <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('farmer.index')" :active="request()->routeIs('farmer.index')">
+                    {{ __('Farmer') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('pulper.index')" :active="request()->routeIs('pulper.index')">
+                    {{ __('Pulper') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('huller.index')" :active="request()->routeIs('huller.index')">
+                    {{ __('Huller') }}
+                </x-responsive-nav-link>
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
